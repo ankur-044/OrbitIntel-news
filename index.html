@@ -2,11 +2,12 @@
 <html>
 <head>
     <title>OrbitIntel AI</title>
+
     <style>
         body{
-            font-family: Arial;
+            font-family: Arial, sans-serif;
             text-align:center;
-            padding:50px;
+            padding:30px;
             background:#f5f5f5;
         }
 
@@ -14,7 +15,7 @@
             background:white;
             padding:30px;
             border-radius:12px;
-            max-width:700px;
+            max-width:1000px;
             margin:auto;
             box-shadow:0 0 10px rgba(0,0,0,0.1);
         }
@@ -27,12 +28,30 @@
             color:green;
             font-weight:bold;
         }
+
+        .pdf-btn{
+            display:inline-block;
+            padding:12px 20px;
+            background:#1a73e8;
+            color:white;
+            text-decoration:none;
+            border-radius:8px;
+            margin-bottom:20px;
+        }
+
+        iframe{
+            width:100%;
+            height:800px;
+            border:none;
+            border-radius:10px;
+        }
     </style>
 </head>
 
 <body>
 
 <div class="card">
+
     <h1>🚀 OrbitIntel AI</h1>
 
     <p>Automated Space Intelligence Platform</p>
@@ -40,10 +59,22 @@
     <h2>Status</h2>
     <p class="status">✅ Automation Active</p>
 
-    <h2>Daily Report System</h2>
-    <p>Reports are generated automatically using GitHub Actions and delivered by email.</p>
+    <h2>Latest Generated Report</h2>
+
+    <a class="pdf-btn"
+       href="https://github.com/ankur-044/OrbitIntel-news/raw/main/output.pdf"
+       target="_blank">
+       📄 Open PDF in New Tab
+    </a>
+
+    <iframe
+        src="https://github.com/ankur-044/OrbitIntel-news/raw/main/output.pdf">
+    </iframe>
+
+    <br><br>
 
     <p><strong>Project By:</strong> Ankur Biswas</p>
+
 </div>
 
 </body>
